@@ -10,4 +10,6 @@
     <string name="hello_first_fragment">Spotter App Placeholder</string>
     <string name="hello_second_fragment">Second page options. Arg: %1$s</string>
     <string name="mail_icon">Mail Icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Spotter App Demo</string>
 </resources>
