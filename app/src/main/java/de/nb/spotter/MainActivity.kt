@@ -53,7 +53,10 @@ class MainActivity : AppCompatActivity() {
         var returnVal = false
 
         when (item.itemId) {
-            R.id.action_exercises -> returnVal = false
+            R.id.action_exercises -> {
+                val intent = Intent(this, ExerciseActivity::class.java)
+                startActivity(intent)
+            }
             R.id.action_settings -> {
                 val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
