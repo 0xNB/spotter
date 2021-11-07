@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@color/design_default_color_primary"/>
+
+
+    <LinearLayout
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/content_main"
-        android:name="de.nb.spotter.MainPageFragment"/>
-<!--    <include-->
-<!--        android:id="@+id/include"-->
-<!--        layout="@layout/main_page"-->
-<!--        android:name="de.nb.spotter.MainPageFragment"-->
-<!--        android:layout_width="409dp"-->
-<!--        android:layout_height="729dp" />-->
+        android:orientation="vertical">
 
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:id="@+id/appBarLayout"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:theme="@style/Theme.Spotter.AppBarOverlay">-->
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/content_main"
+                android:name="de.nb.spotter.MainPageFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-<!--        <androidx.appcompat.widget.Toolbar-->
-<!--            android:id="@+id/toolbar"-->
-<!--            android:layout_width="412dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="?attr/colorPrimary"-->
-<!--            app:popupTheme="@style/Theme.Spotter.PopupOverlay" />-->
+    </LinearLayout>
 
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

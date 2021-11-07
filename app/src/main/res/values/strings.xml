@@ -12,4 +12,29 @@
     <string name="mail_icon">Mail Icon</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Spotter App Demo</string>
+    <string name="title_first_section">General Settings</string>
+    <string name="title_checkbox_preference">Use Random Colors</string>
+    <string name="default_checkbox_preference">true</string>
+    <string name="title_second_section">Specific Settings</string>
+    <string name="title_list_preference">History</string>
+    <string name="dialog_title_list_preference">Dialog Title Demo</string>
+    <string name="title_intent_preference">Motivational Video</string>
+    <string name="action_quit">Exit</string>
+    <string name="action_exercises">Exercises</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
