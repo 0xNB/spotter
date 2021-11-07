@@ -59,7 +59,7 @@ class MainPageFragment : Fragment(R.layout.main_page), SeekBar.OnSeekBarChangeLi
             val values = ArrayList<Entry>()
 
             for(j in 1..5) {
-                val randomValue = (Math.random() + 3)
+                val randomValue = (Math.random() * 3 + 3) + i
                 values.add(Entry(j.toFloat(), randomValue.toFloat()))
             }
 
