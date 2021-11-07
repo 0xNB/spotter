@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:key="first_preferencescreen">
+    android:key="first_preferencescreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory
         android:title="@string/title_first_section">
 
-        <CheckBoxPreference
-            android:key="checkbox_preference"
-            android:title="@string/title_checkbox_preference"
-            android:defaultValue="@string/default_checkbox_preference"/>
+        <ListPreference
+            android:defaultValue="@string/pf_dark_auto"
+            android:dialogTitle="@string/pf_dark_dialog"
+            android:entries="@array/light_theme"
+            android:entryValues="@array/light_theme_value"
+            app:key="@string/pf_key_light"
+            app:summary="@string/pf_content_message"
+            app:title="@string/pf_light_title" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/title_second_section">
 
-        <ListPreference
-            android:key="list_preference"
-            android:title="@string/title_list_preference"
-            android:dialogTitle="@string/dialog_title_list_preference"
-            android:entries="@array/entries_list_preference"
-            android:entryValues="@array/entryvalues_list_preference" />
+        <Preference
+            android:title="Backup"
+            android:key="@string/backup_button"
+            android:summary="Backup Your Data to and from different formats"
+            />
 
         <Preference
             android:title="@string/title_intent_preference">
