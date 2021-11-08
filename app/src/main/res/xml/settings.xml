@@ -13,7 +13,6 @@
             app:key="@string/pf_key_light"
             app:summary="@string/pf_content_message"
             app:title="@string/pf_light_title" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -22,8 +21,12 @@
         <Preference
             android:title="Backup"
             android:key="@string/backup_button"
-            android:summary="Backup Your Data to and from different formats"
-            />
+            android:summary="Backup Your Data to and from different formats">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="de.nb.spotter"
+                android:targetClass="de.nb.spotter.BackupActivity" />
+        </Preference>
 
         <Preference
             android:title="@string/title_intent_preference">

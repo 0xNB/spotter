@@ -8,17 +8,23 @@
     tools:context=".ExerciseActivity">
 
     <Button
-        android:id="@+id/historyButton"
+        android:id="@+id/workoutHistory"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="20dp"
         android:layout_weight="1"
-        android:text="History" />
+        android:text="Workout History" />
     <Button
-        android:id="@+id/addExerciseButton"
+        android:id="@+id/addNewWorkout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="20dp"
         android:layout_weight="1"
-        android:text="Add Exercise" />
+        android:text="Add new session" />
+    <Button
+        android:id="@+id/changeExercises"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:text="Change Exercises" />
 
     <ImageView
         android:id="@+id/imageView"
